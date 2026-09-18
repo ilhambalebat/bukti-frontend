@@ -27,8 +27,8 @@ export interface UserMeResponse {
 }
 
 export const useAuth = () => {
-  const config = useRuntimeConfig();
-  const apiBase = config.public.apiBase as string;
+  // Hardcoded endpoint production sesuai spesifikasi
+  const apiBase = 'https://api-bukti.satuarah.id/api';
 
   // Gunakan useCookie untuk penyimpanan token aman (SSR & Client friendly)
   const token = useCookie<string | null>('bukti_token', {

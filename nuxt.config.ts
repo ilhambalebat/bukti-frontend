@@ -15,8 +15,8 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      apiBase: process.env.NUXT_PUBLIC_API_BASE || 'https://api-bukti.satuarah.id/api',
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://bukti.satuarah.id'
+      apiBase: 'https://api-bukti.satuarah.id/api',
+      siteUrl: 'https://bukti.satuarah.id'
     }
   },
 
